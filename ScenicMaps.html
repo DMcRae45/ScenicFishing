@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Scenic Fishing Map</title>
+	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8" />
+
+
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script type="text/javascript" src="ScenicMaps.js"></script>
+
+        <style type="text/css" media="all">
+        @import "ScenicMaps.css";
+        </style>
+
+
+</head>
+    
+<body>
+    
+<div id="container"> <!-- contains the visible web page -->
+
+    <div id="banner">	
+        
+        <img id="logo" src="Scenic_logo.png" alt="GALLERY PLACE HOLDER" >
+        
+        <div id="hamburger-home">
+            <!-- Hamburger symbol -->
+            <span class="menu-hamburger">&#9776;</span>
+            <!-- Hamburger symbol -->	
+        </div>
+            <link href="ScenicHome.css" rel="stylesheet" type="text/css"/>
+	
+		<!-- menu -->
+		<div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Fisheries</a></li>
+                        <li><a href="ScenicMaps.html">Nearby</a></li>
+                        <li><a href="ScenicGallery.html">Gallery</a></li>
+                        <li><a href="ScenicShop.php">Shop</a></li>
+                        <li><a href="#Option5">Contact</a></li>
+                    </ul>
+		</div>
+		<!-- menu -->
+    </div> 
+    
+    <div id="gap">
+        <br/>
+    </div>
+
+	<div id = "map-container">
+
+            <div id="map-canvas">
+                
+            </div>
+	
+	</div>
+	<!-- ledyatt long and lat code is (56.507611, -3.164261) to be inserted into jquery at later date -->
+	
+ 
+</div>
+</body>
+
+</html>
