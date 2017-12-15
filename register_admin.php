@@ -15,7 +15,7 @@ $query = $pdo->prepare
     ("
         
     INSERT INTO users (fname, lname, username, password, Admin)
-    VALUES( :fname, :lname, :username, :password, 'N')
+    VALUES( :fname, :lname, :username, :password, :Admin)
 
     ");
 
@@ -24,7 +24,8 @@ $success = $query->execute
     'fname' => $fname,
     'lname' => $lname,
     'username' => $username,
-    'password' => $password
+    'password' => $password,
+    'Admin' => $Admin
     ]);
 
 

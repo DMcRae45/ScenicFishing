@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html lang="en">
     <head>
         <title>Movie Database</title>
@@ -27,6 +26,13 @@
                         <li><a href="ScenicGallery.html">Gallery</a></li>
                         <li><a href="ScenicShop.php">Shop</a></li>
                         <li><a href="#Option5">Contact</a></li>
+                    <?php
+                        if($_SESSION['LoggedIn'])
+                        {
+                        echo "<li><a href='registration.html'>Insert</a></li>";
+                        echo "<li><a href='update_admin.php'>admin update</a></li>";
+                        }
+                    ?> 
                     </ul>
 		</div>
 		<!-- menu -->
