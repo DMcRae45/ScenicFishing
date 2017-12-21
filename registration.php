@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title></title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="css/movie_home.css" />
         
     </head>
     <body>
-    <div id="banner">	
-        
-        <img id="logo" src="Scenic_logo.png" alt="GALLERY PLACE HOLDER" >
-        
-        <div id="hamburger-home">
-            <!-- Hamburger symbol -->
-            <span class="menu-hamburger">&#9776;</span>
-            <!-- Hamburger symbol -->	
-        </div>
-            <link href="ScenicHome.css" rel="stylesheet" type="text/css"/>
-	
-		<!-- menu -->
-		<div class="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Fisheries</a></li>
-                        <li><a href="ScenicMaps.html">Nearby</a></li>
-                        <li><a href="ScenicGallery.html">Gallery</a></li>
-                        <li><a href="ScenicShop.php">Shop</a></li>
-                        <li><a href="registration.html">Register/Login</a></li>
-                    </ul>
-		</div>
-		<!-- menu -->
+<?php
+	include_once 'Include/header.php';
+?>
     </div> 
 
         <section class="inner container">
@@ -41,7 +23,10 @@
                     <input type="text" name="fname" id="Fname" /> 
                     
                 <label for="lname"><span>Last name:</span></label>  
-                    <input type="text" name="lname" id="Lname" />  
+                    <input type="text" name="lname" id="Lname" />
+                    
+                <label for="email"><span>Email:</span></label>  
+                    <input type="text" name="email" id="Email" /> 
   
                 <label for="username"><span>Username:</span></label>  
                     <input type="text" name="username" id="Username" />  
@@ -56,8 +41,7 @@
 
             </form>		
         </section>
-        <footer>
-            <span id="copy">&copy; David McRae 2017</span>
-        </footer>
-    </body>
-</html>
+
+<?php
+	include_once 'LoginSystem/footer.php';
+?>

@@ -4,47 +4,21 @@
     <head>
         <title>Movie Database</title>
         <meta name="viewport" content="width: device-width, intial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="movie_home.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/movie_home.css" />
     </head>
-    <body>
-    <div id="banner">	
-        
-        <img id="logo" src="Scenic_logo.png" alt="GALLERY PLACE HOLDER" >
-        
-        <div id="hamburger-home">
-            <!-- Hamburger symbol -->
-            <span class="menu-hamburger">&#9776;</span>
-            <!-- Hamburger symbol -->	
-        </div>
-            <link href="ScenicHome.css" rel="stylesheet" type="text/css"/>
-	
-		<!-- menu -->
-		<div class="nav-menu">
-                    <ul>
-                        <li><a href="index.html">Fisheries</a></li>
-                        <li><a href="ScenicMaps.html">Nearby</a></li>
-                        <li><a href="ScenicGallery.html">Gallery</a></li>
-                        <li><a href="ScenicShop.php">Shop</a></li>
-                        <li><a href="#Option5">Contact</a></li>
-                    <?php
-                        if($_SESSION['LoggedIn'])
-                        {
-                        echo "<li><a href='registration.html'>Insert</a></li>";
-                        echo "<li><a href='update_admin.php'>admin update</a></li>";
-                        }
-                    ?> 
-                    </ul>
-		</div>
-		<!-- menu -->
-    </div> 
-        
+<body>
+
+<div id="container"> <!-- contains the visible web page-->
+    <?php
+    include_once 'Include/header.php';
+    ?>
 
 
-        <section class="inner container">
+<section class="inner container">
            
 <?php
 
-include_once 'dbconnection.php';
+include_once 'Include/dbconnection.php';
 
 $sql = "SELECT * FROM ScenicProducts";
 
@@ -72,8 +46,11 @@ if($sucess)
             
             
         </section>
-        <footer>
-            <span id="copy">&copy; David McRae 2017</span>
-        </footer>	
-    </body>
-</html>
+</div><!-- end of container-->
+
+<script type="text/javascript">
+</script>
+
+<?php
+	include_once 'Include/footer.php';
+?>

@@ -1,24 +1,24 @@
 <?php
 
-include_once 'dbconnection.php';
+include_once 'Include/dbconnection.php';
 
-$title = $_POST['Product'];
-$year = $_POST['Description'];
-$genre = $_POST['Price'];
+$product = $_POST['product'];
+$description = $_POST['description'];
+$price = $_POST['price'];
 
 $query = $pdo->prepare 
     ("
         
     INSERT INTO ScenicProducts (Product, Description, Price)
-    VALUES( :Product, :Description, :Price)
+    VALUES( :product, :description, :price)
 
     ");
 
 $success = $query->execute
     ([
-    'Product' => $Product,
-    'Description' => $Description,
-    'Price' => $Price,
+    'product' => $product,
+    'description' => $description,
+    'price' => $price
     ]);
 
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once 'dbconnection.php';
+include_once 'Include/dbconnection.php';
 
 $Admin = $_POST['Admin'];
 $id = $_POST['id'];
@@ -10,7 +10,7 @@ $query = $pdo->prepare
     ("
         
     UPDATE TABLE users 
-    SET Admin = 'Y'
+    SET Admin = '1'
     WHERE id = $id;
 
     ");

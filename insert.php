@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <?php
-session_start();
-if(!$_SESSION['LoggedIn'])
-{
-header('location: ScenicShop.php');
-}
+//session_start();
+//if(!$_SESSION['LoggedIn'])
+//{
+//header('location: ScenicShop.php');
+//}
 ?>
 <html>
     <head>
         <title>Insert</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="movie_home.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/movie_home.css" />
         
     </head>
     <body>
-        <div id="header">
-            <div class="inner">
-                <div id="logo">LOGO</div>
-                <nav>
-                    <a href="ScenicShop.php">Home</a>
-                    <?php
-                    if($_SESSION['LoggedIn'])
-                        {
-                        echo "<a href='insert.php'>Insert</a>";
-                        }
-                    ?>
-                    <a href="login.html">Login</a>
-                </nav>
-            </div>
-        </div>
-        <div id="banner">
-            <h1>Movies</h1>
-            <h3>Database</h3>
-        </div>
+<div id="container">
+<?php
+include_once 'Include/header.php';
+?>
 
         <section class="inner container">
             
@@ -46,13 +31,14 @@ header('location: ScenicShop.php');
                     <input type="text" name="description" id="description" />
                     
                 <label for="title"><span>Price:</span></label>  
-                    <input type="text" name="price" id="price" />
+                <input type="number" name="price" id="price" />
                     
                 <input type="submit" value="Submit" />
             </form>		
         </section>
-        <footer>
-            <span id="copy">&copy; David McRae 2017</span>
-        </footer>
-    </body>
-</html>
+    </div>
+<?php
+
+include_once 'Include/footer.php';
+
+?>

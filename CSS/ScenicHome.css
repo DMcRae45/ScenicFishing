@@ -2,7 +2,7 @@
 
 html 
 { 
-    background: url(Lake_background.jpg) no-repeat center fixed; 
+    background: url(../Images/Lake_background.jpg) no-repeat center fixed; 
     background-size:cover;
 } 
 body
