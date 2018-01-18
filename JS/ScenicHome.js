@@ -9,6 +9,7 @@ jQuery(document).ready(function(){
 		});
 		
 	});
+        
 	    $("#Ledyatt-banner").click(function(){
         $("#Ledyatt-description").slideToggle("slow");
     });

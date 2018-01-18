@@ -34,8 +34,9 @@
                 <label for="password"><span>Password:</span></label>
                     <input type="Password" name="password" id="Password" autocomplete="off"/>
                             
-                <label for="Admin"><span>Admin:</span></label>  
-                    <input type="text" name="Admin" id="Admin" />  
+<!--                <label for="Admin"><span>Admin:</span></label>  
+                    <input type="text" name="Admin" id="Admin" /> 
+-->
                     
                 <input type="submit" value="Submit" />
 

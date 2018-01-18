@@ -29,11 +29,13 @@ if($success && $stmt->rowCount() > 0)
     
     header ('location: ../index.php');
     
+    
 } else {
     echo "Failed to login";
-//    $_SESSION['LoggedIn'] = false;
+//  $_SESSION['LoggedIn'] = false;
     $_SESSION['username'] = "";
     
     header ('location: ../index.php');
 }
 //var_dump($_SESSION);
+

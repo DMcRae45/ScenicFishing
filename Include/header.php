@@ -67,6 +67,20 @@ session_start();
                              <button type="submit" name"submit>Insert Product</button>
 
                             </form>';
+                            
+                            echo
+                            '<form action="delete.php" method="POST">
+
+                             <button type="submit" name"submit>Delete Product</button>
+
+                            </form>';
+                            
+                            echo
+                            '<form action="ManageUsers.php" method="POST">
+
+                             <button type="submit" name"submit>Manage Users</button>
+
+                            </form>';
                             //}  
                         }
 //                        //If the user is not logged in ("User_ID" doesn't exist), then we display the login form
@@ -113,3 +127,5 @@ session_start();
             </div> 
 
         </header>
+        
+        
