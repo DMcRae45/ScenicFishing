@@ -26,8 +26,10 @@ $count = $query->rowCount();
 if($count > 0)
 {
     echo "Update Successful";
+    header ('location: ../ManageUsers.php');
 }else{
     echo "Update Failed";
+    header ('location: ../ManageUsers.php');
 }
 
 ?>

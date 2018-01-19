@@ -7,6 +7,7 @@
 
         <script type="text/javascript" src="JS/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="JS/ScenicHome.js"></script>
+        
 
 
         <style type="text/css" media="all"> 
@@ -18,20 +19,23 @@
 <div id="container"> <!-- contains the visible web page-->
     
 <?php
-	include_once 'Include/header.php';
+	include_once 'Include/header.php';     
 ?>
-<!--    
-<section class="main-container">
-    <div class="main-wrapper">
-        <?php
-            //Here we display a message if we are logged in!
-            //if (isset($_SESSION['loggedIn'])) {
-                    //echo "You are logged in!";
-            //}		
-        ?>
-    </div>
-</section>
--->
+    
+<?php
+if(isset($_COOKIE['UserVisit']))
+{
+    echo "";
+} else {
+    echo "<script>alert('Welcome to Scenic Fishing, Please do not hesitate to contact an admin for support if needed. ');</script>";
+    
+    $Month = 2592000 + time(); //this adds 30 days to the current time
+    
+    setcookie('UserVisit',$Month);
+}
+?>
+    
+
 		
 <div id="content"> <!-- this div is the content of the page -->	
 

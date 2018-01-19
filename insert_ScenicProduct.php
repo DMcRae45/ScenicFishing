@@ -26,8 +26,10 @@ $count = $query->rowCount();
 if($count > 0)
 {
     echo "Insert Successful";
+    header ('location: ../insert.php');
 }else{
     echo "Insert Failed";
+    header ('location: ../insert.php');
 }
 
 ?>

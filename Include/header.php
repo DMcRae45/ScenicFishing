@@ -1,6 +1,6 @@
 <?php
 //We need to have a session started on ALL pages
-session_start();
+session_start(); 
 ?>
 
 <!DOCTYPE html>

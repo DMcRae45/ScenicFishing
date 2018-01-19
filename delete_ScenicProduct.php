@@ -23,8 +23,12 @@ $count = $query->rowCount();
 if($count > 0)
 {
     echo "Delete Successful";
+    header ('location: ../delete.php');
+    
 }else{
-    echo "Delete Failed";
+    echo "Delete Successful";
+    header ('location: ../delete.php');
+    
 }
 
 ?>

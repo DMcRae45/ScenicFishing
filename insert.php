@@ -13,6 +13,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="CSS/movie_home.css" />
         
+        <script type="text/javascript" src="JS/Confirmation.js"></script>
+        
     </head>
     <body>
 <div id="container">
@@ -22,7 +24,7 @@ include_once 'Include/header.php';
 
         <section class="inner container">
             
-            <form id="insert_ScenicProduct" name="insert_ScenicProduct" action="insert_ScenicProduct.php" method="POST">
+            <form id="insert_ScenicProduct" name="insert_ScenicProduct" action="insert_ScenicProduct.php" method="POST" onsubmit="return show_alert(this);">
                 
                 <label for="title"><span>Product:</span></label>  
                     <input type="text" name="product" id="product" />  
