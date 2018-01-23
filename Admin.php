@@ -5,7 +5,7 @@
     <head>
         <title>Movie Database</title>
         <meta name="viewport" content="width: device-width, intial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/movie_home.css" />
+        <link rel="stylesheet" type="text/css" href="css/ScenicShop.css" />
     </head>
     <body>
         <div id="header">

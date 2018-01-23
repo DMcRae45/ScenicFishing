@@ -1,6 +1,6 @@
 * {margin:0; padding:0;}
 
-html 
+/*html, body 
 { 
     background: url(../Images/Lake_background.jpg) no-repeat center fixed; 
     background-size:cover;
@@ -8,7 +8,7 @@ html
 body
 { 
 
-} 
+} */
 p
 {
     background:rgba(0,0,0,.7);

@@ -12,7 +12,7 @@ session_start();
         <link href="../CSS/LoginStyle.css" rel="stylesheet" type="text/css"/>
         <link href="../CSS/MenuStyle.css" rel="stylesheet" type="text/css"/>
         <style>
-            html 
+            html, body 
             { 
                 background: url(../Images/Lake_background.jpg) no-repeat center fixed; 
                 background-size:cover;
