@@ -27,13 +27,13 @@ include_once 'Include/header.php';
             <form id="insert_ScenicProduct" name="insert_ScenicProduct" action="insert_ScenicProduct.php" method="POST" onsubmit="return show_alert(this);">
                 
                 <label for="title"><span>Product:</span></label>  
-                    <input type="text" name="product" id="product" />  
+                    <input type="text" name="product" id="product" /><br/>  
                     
                 <label for="title"><span>Description:</span></label>
-                    <input type="text" name="description" id="description" />
+                    <input type="text" name="description" id="description" /><br/> 
                     
                 <label for="title"><span>Price:</span></label>  
-                <input type="number" name="price" id="price" />
+                <input type="number" name="price" id="price" /><br/> 
                     
                 <input type="submit" value="Submit" />
             </form>		

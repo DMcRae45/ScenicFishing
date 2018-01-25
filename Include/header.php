@@ -12,11 +12,17 @@ session_start();
         <link href="../CSS/LoginStyle.css" rel="stylesheet" type="text/css"/>
         <link href="../CSS/MenuStyle.css" rel="stylesheet" type="text/css"/>
         <style>
-            html, body 
+/*            html, body 
             { 
                 background: url(../Images/Lake_background.jpg) no-repeat center fixed; 
                 background-size:cover;
-            } 
+            } */
+
+
+            #footer, form, label
+            {
+                background-color:#e7ecf2;
+            }
         </style>
 
     </head>
@@ -105,7 +111,7 @@ session_start();
             </nav>
 
             <div id="banner">	      
-                <img id="logo" src="../Images/Scenic_logo.png" alt="GALLERY PLACE HOLDER" >
+                <img id="logo" src="Images/Scenic_logo.png" alt="GALLERY PLACE HOLDER" >
 
                 <div id="hamburger-home">
                     <!-- Hamburger symbol (only in media query)-->
