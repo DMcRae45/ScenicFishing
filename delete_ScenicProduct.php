@@ -26,7 +26,7 @@ if($count > 0)
     header ('location: ../delete.php');
     
 }else{
-    echo "Delete Successful";
+    echo "Delete UnSuccessful";
     header ('location: ../delete.php');
     
 }

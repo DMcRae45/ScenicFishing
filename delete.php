@@ -35,8 +35,10 @@ include_once 'Include/header.php';
                     <input type="text" name="product_id" id="product_id" />  
                       
                 <input type="submit" value="Submit"/>
-            </form>		
+            </form>	
+            
         </section>
+    
     </div>
 <script>
 </script>
